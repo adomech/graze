@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  database:
+    image: mariadb:10.2
+    container_name: graze-mariadb
+    environment:
+      - MYSQL_ROOT_PASSWORD=graze
+      - MYSQL_DATABASE=graze
+      - MYSQL_USER=graze
+      - MYSQL_PASSWORD=graze
+    ports:
+      - "8083:3306"
+  web:
+    build: docker/php-apache2
+    container_name: grace-web
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
