@@ -1,23 +1,17 @@
 # Cache and logs (Symfony2)
 backend/app/cache/*
 backend/app/logs/*
-backend/!app/cache/.gitkeep
-backend/!app/logs/.gitkeep
 
 # Email spool folder
-backend//app/spool/*
+backend/app/spool/*
 
 # Cache, session files and logs
 backend/var/cache/*
 backend/var/logs/*
 backend/var/sessions/*
-backend/!var/cache/.gitkeep
-backend/!var/logs/.gitkeep
-backend/!var/sessions/.gitkeep
 
 # Logs (Symfony4)
 backend/var/log/*
-backend/!var/log/.gitkeep
 
 # Parameters
 backend/app/config/parameters.yml
@@ -26,9 +20,7 @@ backend/app/config/parameters.ini
 # Managed by Composer
 backend/app/bootstrap.php.cache
 backend/var/bootstrap.php.cache
-backend//bin/*
-backend/!bin/console
-backend/!bin/symfony_requirements
+backend/bin/*
 backend/vendor/
 
 # Assets and user uploads
@@ -40,7 +32,7 @@ backend/app/phpunit.xml
 backend/phpunit.xml
 
 # Build data
-backend//build/
+backend/build/
 
 # Composer PHAR
 backend/composer.phar
