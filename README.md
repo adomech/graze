@@ -19,3 +19,7 @@ yarn start
 Go to Backend folder and run
 
 docker-compose up -d
+
+When the docker is running, go to the backend directory and run:
+
+composer install

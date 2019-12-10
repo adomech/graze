@@ -39,6 +39,3 @@ backend/composer.phar
 
 # Embedded web-server pid file
 backend/.web-server-pid
-
-#Node modules
-frontend/node_modules
